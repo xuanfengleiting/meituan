@@ -15,6 +15,7 @@
 		844A802A2003B6AE00273F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A80292003B6AE00273F20 /* main.m */; };
 		844A80342003B6AE00273F20 /* meituanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A80332003B6AE00273F20 /* meituanTests.m */; };
 		844A803F2003B6AF00273F20 /* meituanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A803E2003B6AF00273F20 /* meituanUITests.m */; };
+		844A80532003B79E00273F20 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A80522003B79E00273F20 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		844A803A2003B6AF00273F20 /* meituanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meituanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844A803E2003B6AF00273F20 /* meituanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = meituanUITests.m; sourceTree = "<group>"; };
 		844A80402003B6AF00273F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844A80512003B79E00273F20 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		844A80522003B79E00273F20 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,9 @@
 		844A80192003B6AE00273F20 /* meituan */ = {
 			isa = PBXGroup;
 			children = (
-				844A801A2003B6AE00273F20 /* AppDelegate.h */,
-				844A801B2003B6AE00273F20 /* AppDelegate.m */,
-				844A801D2003B6AE00273F20 /* ViewController.h */,
-				844A801E2003B6AE00273F20 /* ViewController.m */,
-				844A80202003B6AE00273F20 /* Main.storyboard */,
-				844A80232003B6AE00273F20 /* Assets.xcassets */,
-				844A80252003B6AE00273F20 /* LaunchScreen.storyboard */,
 				844A80282003B6AE00273F20 /* Info.plist */,
-				844A80292003B6AE00273F20 /* main.m */,
+				844A804F2003B77000273F20 /* Resources */,
+				844A804C2003B73F00273F20 /* Classes */,
 			);
 			path = meituan;
 			sourceTree = "<group>";
@@ -130,6 +127,54 @@
 				844A80402003B6AF00273F20 /* Info.plist */,
 			);
 			path = meituanUITests;
+			sourceTree = "<group>";
+		};
+		844A804C2003B73F00273F20 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				844A80502003B78900273F20 /* Model */,
+				844A804E2003B75700273F20 /* Controller */,
+				844A804D2003B74C00273F20 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		844A804D2003B74C00273F20 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				844A80292003B6AE00273F20 /* main.m */,
+				844A801A2003B6AE00273F20 /* AppDelegate.h */,
+				844A801B2003B6AE00273F20 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		844A804E2003B75700273F20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				844A801D2003B6AE00273F20 /* ViewController.h */,
+				844A801E2003B6AE00273F20 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		844A804F2003B77000273F20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				844A80202003B6AE00273F20 /* Main.storyboard */,
+				844A80232003B6AE00273F20 /* Assets.xcassets */,
+				844A80252003B6AE00273F20 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		844A80502003B78900273F20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				844A80512003B79E00273F20 /* Dog.h */,
+				844A80522003B79E00273F20 /* Dog.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +312,7 @@
 			files = (
 				844A801F2003B6AE00273F20 /* ViewController.m in Sources */,
 				844A802A2003B6AE00273F20 /* main.m in Sources */,
+				844A80532003B79E00273F20 /* Dog.m in Sources */,
 				844A801C2003B6AE00273F20 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
